@@ -6,19 +6,23 @@ namespace ImplemantationOfIEnumrable
     {
         static void Main(string[] args)
         {
-            CourseMemberList courseMemberList = new CourseMemberList();
-            courseMemberList.Add(new CourseMember("Oğuz", "Karan"));
-            courseMemberList.Add(new CourseMember("Kaan", "Arslan"));
-            courseMemberList.Add(new CourseMember("Muhammed", "Oğur"));
-            courseMemberList.Add(new CourseMember("Hede", "Hüde"));
+            CourseMemberList courseMemberList = new CourseMemberList
+            {
+                new CourseMember("Oğuz", "Karan"),
+                new CourseMember("Kaan", "Arslan"),
+                new CourseMember("Muhammed", "Oğur"),
+                new CourseMember("Hede", "Hüde")
+             };
 
-            //for (int i = 0; i < courseMemberList.Count; i++)
-            //{
-            //    Console.WriteLine(courseMemberList[i]);
-            //}
+            //courseMemberList.Add(new CourseMember("Oğuz", "Karan"));
+            //courseMemberList.Add(new CourseMember("Kaan", "Arslan"));
+            //courseMemberList.Add(new CourseMember("Muhammed", "Oğur"));
+            //courseMemberList.Add(new CourseMember("Hede", "Hüde"));
 
-            Console.WriteLine(courseMemberList.Count);
-            Console.WriteLine(courseMemberList[0]);
+            for (int i = 0; i < courseMemberList.Count; i++)
+            {
+                Console.WriteLine(courseMemberList[i]);
+            }
 
             foreach (var member in courseMemberList)
             {
