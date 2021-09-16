@@ -26,7 +26,6 @@ namespace ImplemantationOfIEnumrable
             return GetEnumerator();
         }
 
-        // TODO: Lambda ve this keywordu kullanmadan yazılımı??
         public CourseMember this[int idx] => _courseMembers[idx];
 
         public int Count => _courseMembers.Count;

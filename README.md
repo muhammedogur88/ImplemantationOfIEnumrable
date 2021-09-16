@@ -1,5 +1,5 @@
 # ImplemantationOfIEnumrable
-How IEnumarable and IEnumaretor works behind scene
+How IEnumarable and IEnumaretor work behind the scene
 
 
 To Create sample Porject with Console commands
